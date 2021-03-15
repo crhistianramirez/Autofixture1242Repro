@@ -13,6 +13,7 @@ namespace Autofixture1242Repro
         [Test, AutoNSubstituteDataAttribute]
         public void ThisTestFails(MyOrder myOrder)
         {
+            System.Console.WriteLine("fails");
             Assert.NotNull(myOrder.xp.Color);
         }
 
